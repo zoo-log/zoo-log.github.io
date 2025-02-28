@@ -3,11 +3,11 @@ main:
   - title: "Home"
     url: https://zoo-log.github.io/
 
-  - title: "About"
-    url: /about/
+  #- title: "About"
+  #  url: /about/
 
-  - title: "GitHub"
-    url: https://github.com/zoo-log
+  #- title: "GitHub"
+  #  url: https://github.com/zoo-log
 
   # - title: "Projects"
   #   url: /projects/
@@ -20,21 +20,19 @@ main:
 categories:
   - title: "HACK"
     children:
+      - title: "WEB"
+        url: /categories/WEB/
+      - title: "PWN"
+        url: /categories/PWN/
       - title: "REVERSE"
         url: /categories/REVERSE/
-      - title: "Categories2"
-        url: /categories/categories2/
-      - title: "Categories3"
-        url: /categories/categories3/
-      - title: "Categories4"
-        url: /categories/categories4/
 
   - title: "WEB"
     children:
       - title: "PHP"
         url: /categories/PHP/
-      - title: "Categories6"
-        url: /categories/categories6/
+      - title: "MYSQL"
+        url: /categories/MYSQL/
 
   - title: "Title3"
     children:
