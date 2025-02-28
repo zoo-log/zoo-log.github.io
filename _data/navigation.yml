@@ -34,7 +34,7 @@ categories:
       - title: "MYSQL"
         url: /categories/MYSQL/
 
-  - title: "Title3"
-    children:
-      - title: "Categories7"
-        url: /categories/categories7/
+#  - title: "Title3"
+#    children:
+#      - title: "Categories7"
+#        url: /categories/categories7/
