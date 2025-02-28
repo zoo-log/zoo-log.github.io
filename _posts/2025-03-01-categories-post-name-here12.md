@@ -5,7 +5,7 @@ excerpt: "본문의 주요 내용을 여기에 입력하세요"
 categories:
   - PHP
 tags:
-  - [PHP, ]
+  - [PHP, Web]
 
 permalink: /PHP/post-name-here/
 
