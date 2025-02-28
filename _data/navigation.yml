@@ -20,14 +20,14 @@ main:
 categories:
   - title: "PROGRAMMING"
     children:
-      - title: "Web"
-        url: /PROGRAMMING/WEB/
-      - title: "Categories2"
-        url: /categories/categories2/
-      - title: "Categories3"
-        url: /categories/categories3/
-      - title: "Categories4"
-        url: /categories/categories4/
+      - title: "WEB"
+        url: /categories/WEB/
+#      - title: "Categories2"
+#        url: /categories/categories2/
+#      - title: "Categories3"
+#        url: /categories/categories3/
+#      - title: "Categories4"
+#        url: /categories/categories4/ 
 
   - title: "HACK"
     children:
