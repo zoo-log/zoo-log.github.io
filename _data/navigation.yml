@@ -31,8 +31,8 @@ categories:
 
   - title: "WEB"
     children:
-      - title: "Categories5"
-        url: /categories/categories5/
+      - title: "PHP"
+        url: /categories/PHP/
       - title: "Categories6"
         url: /categories/categories6/
 
