@@ -283,4 +283,13 @@ defaults:
       sidebar:
         nav: "categories"
 
+# 글 날짜 미래도 가능능
 future: true
+
+# 1번의 script에서 issue_term과 theme을 아래와 같이 작성
+# 1번의 script와 _config.yml이 다를 경우만 수정
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "boxy-light"
+    issue_term: "pathname" # pathname은 post.md 파일 이름으로 연결됨
