@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "Home"
-    url: https://pjuhyeon.github.io/
+    url: https://zoo-log.github.io/
 
   - title: "About"
     url: /about/
 
   - title: "GitHub"
-    url: https://github.com/pjuhyeon
+    url: https://github.com/zoo-log
 
   # - title: "Projects"
   #   url: /projects/
@@ -18,25 +18,25 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
-  - title: "PROGRAMMING"
+  - title: "Hack"
     children:
       - title: "WEB"
-        url: /WEB/
-#      - title: "Categories2"
-#        url: /categories/categories2/
-#      - title: "Categories3"
-#        url: /categories/categories3/
-#      - title: "Categories4"
-#        url: /categories/categories4/ 
+        url: /categories/HACK/
+      - title: "PWN"
+        url: /categories/HACK/
+      - title: "REV"
+        url: /categories/HACK/
+      - title: "CRY"
+        url: /categories/HACK/
 
-  - title: "HACK"
+  - title: "WEB"
     children:
-      - title: "Categories5"
+      - title: "HTML"
         url: /categories/categories5/
-      - title: "Categories6"
+      - title: "CSS"
         url: /categories/categories6/
 
-  - title: "REVERSE"
+  - title: "Title3"
     children:
       - title: "Categories7"
         url: /categories/categories7/
