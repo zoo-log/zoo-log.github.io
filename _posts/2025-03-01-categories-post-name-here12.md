@@ -1,5 +1,5 @@
 ---
-title: "[포스팅 예시] 이곳에 제목을 입력하세요"
+title: "[포스팅 예시] test"
 excerpt: "본문의 주요 내용을 여기에 입력하세요"
 
 categories:
@@ -12,8 +12,8 @@ permalink: /PHP/post-name-here/
 toc: true
 toc_sticky: true
 
-date: 2025-02-01
-last_modified_at: 2025-02-01
+date: 2025-03-01
+last_modified_at: 2022-02-01
 ---
 
 ## 🦥 본문
