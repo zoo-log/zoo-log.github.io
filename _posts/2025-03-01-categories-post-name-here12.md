@@ -12,8 +12,8 @@ permalink: /PHP/post-name-here/
 toc: true
 toc_sticky: true
 
-date: 2025-03-01
-last_modified_at: 2025-03-01
+date: 2025-02-01
+last_modified_at: 2025-02-01
 ---
 
 ## 🦥 본문
