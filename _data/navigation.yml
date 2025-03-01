@@ -34,6 +34,12 @@ categories:
       - title: "MYSQL"
         url: /categories/MYSQL/
 
+  - title: "LANG"
+    children:
+      - title: "PYTHON"
+        url: /categories/PYTHON/
+      - title: "C"
+        url: /categories/C/
 #  - title: "Title3"
 #    children:
 #      - title: "Categories7"
