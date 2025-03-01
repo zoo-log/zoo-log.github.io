@@ -5,7 +5,7 @@ excerpt: "Blog Testing"
 categories:
   - MYSQL
 tags:
-  - [MySQL, Web]
+  - [WEB, MYSQL]
 
 permalink: /MYSQL/post-test/
 

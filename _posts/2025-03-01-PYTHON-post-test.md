@@ -5,7 +5,7 @@ excerpt: "Blog Testing"
 categories:
   - PYTHON
 tags:
-  - [PYTHON, LANG]
+  - [LANG, PYTHON]
 
 permalink: /PYTHON/post-test/
 

@@ -5,7 +5,7 @@ excerpt: "Blog Testing"
 categories:
   - REVERSE
 tags:
-  - [tag1, tag2]
+  - [HACK, REVERSE]
 
 permalink: /REVERSE/post-test/
 

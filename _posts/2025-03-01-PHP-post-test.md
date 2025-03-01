@@ -5,7 +5,7 @@ excerpt: "Blog Testing"
 categories:
   - PHP
 tags:
-  - [PHP, Web]
+  - [WEB, PHP]
 
 permalink: /PHP/post-test/
 

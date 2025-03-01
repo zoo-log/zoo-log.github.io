@@ -5,7 +5,7 @@ excerpt: "Blog Testing"
 categories:
   - PWN
 tags:
-  - [tag1, tag2]
+  - [HACK, PWN]
 
 permalink: /PWN/post-test/
 

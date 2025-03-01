@@ -5,7 +5,7 @@ excerpt: "Blog Testing"
 categories:
   - WEB
 tags:
-  - [tag1, tag2]
+  - [HACK, WEB]
 
 permalink: /WEB/post-test/
 

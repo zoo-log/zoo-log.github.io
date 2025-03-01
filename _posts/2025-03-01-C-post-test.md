@@ -5,7 +5,7 @@ excerpt: "Blog Testing"
 categories:
   - C
 tags:
-  - [C, Web]
+  - [LANG, C]
 
 permalink: /C/post-test/
 
