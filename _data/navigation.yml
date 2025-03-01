@@ -29,10 +29,8 @@ categories:
 
   - title: "WEB"
     children:
-      - title: "PHP"
-        url: /categories/PHP/
-      - title: "MYSQL"
-        url: /categories/MYSQL/
+      - title: "CRUD"
+        url: /categories/CRUD/
 
   - title: "LANG"
     children:
