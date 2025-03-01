@@ -1,9 +1,9 @@
 ---
-title: "Categories4"
+title: "example"
 layout: category
-permalink: /categories/categories4/
+permalink: /categories/example/
 author_profile: true
-taxonomy: Categories4
+taxonomy: example
 sidebar:
   nav: "categories"
 ---

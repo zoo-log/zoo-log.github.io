@@ -1,9 +1,9 @@
 ---
-title: "MYSQL"
+title: "CRUD"
 layout: category
-permalink: /categories/MYSQL/
+permalink: /categories/CRUD/
 author_profile: true
-taxonomy: MYSQL
+taxonomy: CRUD
 sidebar:
   nav: "categories"
 ---
