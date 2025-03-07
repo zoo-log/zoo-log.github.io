@@ -20,10 +20,10 @@ main:
 categories:
   - title: "HACK"
     children:
-      - title: "WEB"
-        url: /categories/WEB/
-      - title: "PWN"
-        url: /categories/PWN/
+      - title: "WEBHACK"
+        url: /categories/WEBHACK/
+      - title: "PWNABLE"
+        url: /categories/PWNABLE/
       - title: "REVERSE"
         url: /categories/REVERSE/
 

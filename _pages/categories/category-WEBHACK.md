@@ -1,9 +1,9 @@
 ---
-title: "WEB"
+title: "WEBHACK"
 layout: category
-permalink: /categories/WEB/
+permalink: /categories/WEBHACK/
 author_profile: true
-taxonomy: WEB
+taxonomy: WEBHACK
 sidebar:
   nav: "categories"
 ---

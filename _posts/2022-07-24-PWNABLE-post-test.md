@@ -1,13 +1,13 @@
 ---
-title: "WEB Blog Test"
+title: "PWNABLE Blog Test"
 excerpt: "Blog Testing"
 
 categories:
-  - WEB
+  - PWNABLE
 tags:
-  - [HACK, WEB]
+  - [HACK, PWNABLE]
 
-permalink: /WEB/post-test/
+permalink: /PWNABLE/post-test/
 
 toc: true
 toc_sticky: true

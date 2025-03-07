@@ -1,9 +1,9 @@
 ---
-title: "PWN"
+title: "PWNABLE"
 layout: category
-permalink: /categories/PWN/
+permalink: /categories/PWNABLE/
 author_profile: true
-taxonomy: PWN
+taxonomy: PWNABLE
 sidebar:
   nav: "categories"
 ---
