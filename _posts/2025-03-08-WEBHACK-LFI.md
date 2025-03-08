@@ -21,15 +21,15 @@ last_modified_at: 2025-03-08
 
 LFI 취약점은 일반적으로 애플리케이션이 파일 경로를 입력으로 사용할 때 발생한다. 이때 입력값에 대한 적절한 검증이 이루어지지 않을 경우 공격이 진행될 수 있다.
 
-### 에제
-다음은 검증이 이루어지지 않아 LFI에 취약한 PHP 코드이다.
+### 예제
 ```php
 <?php
    $file = $_GET['file'];
    include('directory/' . $file);
 ?>
 ```
-
+include를 사용함으로써 파일속 PHP 코드를 실행해, 결과적으로 PHP 코드 반복을 줄이고 동적인 페이지를 만들 수 있다.   
+하지만 적절한 검증이 이루어지지 않았기 때문에 LFI 취약점이 발생하였다.
 ###  Directory Traversal
 예시로 위 코드에서 공격자는 url에 `?file=../../../../etc/passwd`와 같이 입력하여 서버의 민감한 파일을 읽을 수 있다.  
 Apache.access.log, error.log 또는 소스코드 또한 공격이 가능하다.
@@ -47,13 +47,60 @@ ex) ?page=expect://ls
 - `php://filter`  
 I/O 스트림에 대해 다루며, 다양한 유형의 입력을 전달하고 지정한 필터로 필터링할 수 있다.  
 ex) ?page=php://filter/convert.base64-encode/resource=flag.php
-- `zip://`
+- `zip://`  
 zip 파일의 압축을 풀고 안에 들어있는 코드를 실행한다.  
 ex) ?page=zip://malicious.zip#shell.php
 
 ---
-## 실습
-공부한 내용을 토대로 드림핵의 php-1 문제를 풀어보았다.
+## 실습 (dreamhack php-1)
+위 내용을 토대로 드림핵의 php-1 문제를 풀어보았다.
+<img src="/assets\images\posts_img\lfi\lfi-1.png" alt="web image" width="50%">  
+List를 클릭했을 때 나오는 화면이다.  
+  
+당연히 flag.php 파일은 열 수 없없고  
+<img src="/assets\images\posts_img\lfi\lfi-2.png" alt="web flag image" width="50%">  
+
+hello.json을 클릭하면 ../uploads/hello.json 파일의 내용이 출력된다.  
+<img src="/assets\images\posts_img\lfi\lfi-3.png" alt="web hello.json image" width="50%">  
+
+flag.php파일을 열기 위해 코드를 확인해보았다.  
+우선 내용을 출력해주는 view.php 코드이다.
+```php
+<h2>View</h2>
+<pre><?php
+    $file = $_GET['file']?$_GET['file']:'';
+    if(preg_match('/flag|:/i', $file)){
+        exit('Permission denied');
+    }
+    echo file_get_contents($file);
+?>
+</pre>
+```
+flag에 대해서 검증이 이루어지기 때문에 직접적으로는 접근 할 수 없었다.  
+여기서 index.php 코드를 보면
+```php
+<div class="container">
+  <?php
+    include $_GET['page']?$_GET['page'].'.php':'main.php';
+  ?>
+</div> 
+```
+page를 받아 include 하는 코드이다.  
+여기서 page에 대한 아무런 검증도 없기 때문에 lfi 취약점이 발생한다.  
+  
+page 파라미터에 flag 파일 경로인 /var/www/uploads/flag 값을 넣었더니
+``` bash
+can you see $flag?
+```
+라고 출력되었다. 우리가 찾던 flag는 $flag 변수 안에 들어 있을 것으로 생각이 들었고,   
+flag.php 속 php 코드를 읽기 위해    
+php wrapper 중 php://filter wrapper를 사용해 flag 파일에 접근하였다.
+``` php
+?page=php://filter/convert.base64-encode/resource=/var/www/uploads/flag
+```
+위 코드는 flag 파일을 base64로 인코딩한 값을 출력할 수 있도록 하는 코드이다.  
+page 파라미터에 위 코드를 전송하였고, 출력된 값을 base64로 디코딩 하여 flag 값을 구할 수 있었다.
+
 
 ---
 ## 참고 자료
