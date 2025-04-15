@@ -1,21 +1,18 @@
 ---
-title: "C Blog Test"
-excerpt: "Blog Testing"
+title: "[C] qsort 함수"
+excerpt: "qsort 정렬 함수 설명하기"
 
 categories:
   - C
 tags:
   - [LANG, C]
 
-permalink: /C/post-test/
+permalink: /C/qsort/
 
 toc: true
 toc_sticky: true
 
-date: 2025-03-01
-last_modified_at: 2025-03-01
+date: 2025-04-15
+last_modified_at: 2025-04-15
 ---
-
-## 🦥 본문
-
-본문은 여기에 ...
+## : 📌 qsort() 함수란?
