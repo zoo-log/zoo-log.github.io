@@ -11,24 +11,25 @@ export type LocaleDefinition = {
 
 const LOCALE_DEFINITIONS = [
   {
+    code: 'kr',
+    label: 'Korean',
+    nativeLabel: 'Korean',
+    langTag: 'kr',
+    ogLocale: 'kr',
+    flag: 'kr',
+    dir: 'ltr',
+    isDefault: true,
+  },
+  {
     code: 'en',
     label: 'English',
     nativeLabel: 'English',
     langTag: 'en',
     ogLocale: 'en',
-    flag: '🇬🇧',
+    flag: 'en',
     dir: 'ltr',
-    isDefault: true,
-  },
-  {
-    code: 'ru',
-    label: 'Russian',
-    nativeLabel: 'Русский',
-    langTag: 'ru',
-    ogLocale: 'ru',
-    flag: '🇷🇺',
-    dir: 'ltr',
-  },
+    isDefault: false,
+  }
 ] as const satisfies readonly LocaleDefinition[];
 
 export type LocaleCode = (typeof LOCALE_DEFINITIONS)[number]['code'];
