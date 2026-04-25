@@ -157,7 +157,7 @@ const siteConfig: SiteConfig = {
       },
       description: {
         kr: '프로젝트 일지',
-        en: 'Showcase of my work and open-source contributions',
+        en: 'My Project Diary',
       },
     },
   },
