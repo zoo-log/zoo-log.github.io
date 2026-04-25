@@ -3,16 +3,16 @@ import { DEFAULT_LOCALE, SUPPORTED_LOCALES } from './locales';
 
 const siteConfig: SiteConfig = {
   // Basic site information
-  siteUrl: 'https://morethan-log-astro.sereja.com',
+  siteUrl: 'https://zoo-log/zoo-log.github.io',
   title: {
     kr: 'Zoo-Log',
     en: 'Zoo-Log',
   },
   description: {
-    kr: 'I love Programming, Hacking, Quantitative Trading',
-    en: 'I love Programming, Hacking, Quantitative Trading',
+    kr: '',
+    en: '',
   },
-
+  
   // Author information
   author: {
     name: {
