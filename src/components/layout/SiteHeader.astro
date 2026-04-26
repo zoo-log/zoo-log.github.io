@@ -24,7 +24,7 @@ interface SiteHeaderProps {
   navItems: NavItem[];
   languageOptions: LanguageOption[];
   showSearch: boolean;
-  enableDarkMode: boolean;
+  enableDarkMode: true;
 }
 
 const {
@@ -53,7 +53,7 @@ const {
         </button>
       )}
       <NavLinks navItems={navItems} />
-      <LanguageSwitcher lang={lang} options={languageOptions} />
+      <!-- <LanguageSwitcher lang={lang} options={languageOptions} /> -->
       <button type="button" class="header__menu-toggle" aria-label="Toggle menu">
         <span class="header__menu-icon">☰</span>
       </button>

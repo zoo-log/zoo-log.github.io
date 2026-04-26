@@ -1,6 +1,6 @@
 ---
-const AUTHOR_NAME = 'Sereja';
-const AUTHOR_URL = 'https://sereja.com/';
+const AUTHOR_NAME = 'zoo-log';
+const AUTHOR_URL = 'https://github.io/zoo-log';
 
 interface FooterCopyProps {
   className?: string | string[] | Record<string, boolean>;
@@ -20,7 +20,7 @@ const baseClasses = Array.isArray(className)
 
 const classNames = ['footer', ...baseClasses.filter(Boolean)];
 const currentYear = new Date().getFullYear();
-const footerHtml = `Made with <span class="footer__heart">♥</span> by <a href="${AUTHOR_URL}" target="_blank" rel="noopener noreferrer">${AUTHOR_NAME}</a> • ${currentYear}`;
+const footerHtml = `<span class="footer__heart">@</span><a href="${AUTHOR_URL}" target="_blank" rel="noopener noreferrer">${AUTHOR_NAME}</a> 2026 • ${currentYear}`;
 ---
 <div class={classNames.join(' ')}>
   <div class="footer__copy" set:html={footerHtml}></div>

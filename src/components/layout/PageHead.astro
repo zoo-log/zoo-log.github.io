@@ -70,6 +70,7 @@ const articleAuthor =
 const publishedTime = publishedAt ?? null;
 const modifiedTime = modifiedAt ?? publishedTime;
 
+const testcleantitle = 'zoo-log'
 ---
 <head>
   <meta charset="utf-8" />
@@ -100,7 +101,8 @@ const modifiedTime = modifiedAt ?? publishedTime;
   )}
   <script type="module" src="/js/main.js"></script>
 
-  <title>{title}</title>
+  <!-- <title>{title}</title> -->
+  <title>{testcleantitle}</title>
 
   {description && <meta name="description" content={description} />}
   {keywords && <meta name="keywords" content={keywords} />}
