@@ -2731,6 +2731,22 @@ html:not(.dark-mode) .hljs-params {
 }
 
 /* Scrollbar styling for code blocks */
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+*::-webkit-scrollbar-button {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
 .text-block pre code::-webkit-scrollbar {
     height: 8px;
     width: 8px;
@@ -2752,6 +2768,6 @@ html:not(.dark-mode) .hljs-params {
 
 /* Firefox scrollbar */
 .text-block pre code {
-    scrollbar-width: thin;
+    scrollbar-width: none;
     scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.05);
 }
