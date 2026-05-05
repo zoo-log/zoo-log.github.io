@@ -9,8 +9,8 @@ const siteConfig: SiteConfig = {
     en: 'Zoo-Log',
   },
   description: {
-    kr: '',
-    en: '',
+    kr: 'I love Programming AI, Hacking and Quantitative Trading',
+    en: 'I love Programming AI, Hacking and Quantitative Trading',
   },
   
   // Author information
@@ -22,8 +22,8 @@ const siteConfig: SiteConfig = {
     email: 'qkrwngus3563@naver.com',
     avatar: '/img/avatar.png',
     bio: {
-      kr: 'I love Programming, Hacking, Quantitative Trading',
-      en: 'I love Programming, Hacking, Quantitative Trading', 
+      kr: 'I love Programming, Hacking, Quantitative Trading and AI',
+      en: 'I love Programming, Hacking, Quantitative Trading and AI', 
     },
   },
 
@@ -174,7 +174,7 @@ const siteConfig: SiteConfig = {
   features: {
     darkMode: true,
     search: true,
-    rss: true,
+    rss: false,
     sitemap: true,
     imageLightbox: true,
     postNavigation: true,
